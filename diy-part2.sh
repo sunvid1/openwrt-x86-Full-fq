@@ -17,4 +17,4 @@ sed -i 's/default "5"/default "0"/g' config/Config-images.in
 sed -i 's/255.255.255.0/255.255.248.0/g' package/base-files/files/bin/config_generate
 #sed -i 's/.hostname='OpenWrt'/.hostname='Sunvid'/g' /package/base-files/files/bin/config_generate
 # echo "修改机器名称"  #默认名称OpenWrt
-sed -i 's/OpenWrt/Sunvid-full/g' package/base-files/files/bin/config_generate
+#sed -i 's/OpenWrt/Sunvid-full/g' package/base-files/files/bin/config_generate
