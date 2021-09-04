@@ -18,3 +18,8 @@ sed -i 's/255.255.255.0/255.255.248.0/g' package/base-files/files/bin/config_gen
 #sed -i 's/.hostname='OpenWrt'/.hostname='Sunvid'/g' /package/base-files/files/bin/config_generate
 # echo "修改机器名称"  #默认名称OpenWrt
 #sed -i 's/OpenWrt/Sunvid-full/g' package/base-files/files/bin/config_generate
+#2. Clear the login password
+sed -i 's/$1$V4UetPzk$CYXluq4wUazHjmCDBCqXF.//g' /package/lean/default-settings/files/zzz-default-settings
+
+#3. Replace with JerryKuKu’s Argon
+#rm openwrt/package/lean/luci-theme-argon -rf
